@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "723023258759",
+    "firebase_url": "https://minhacozinha-dde4e.firebaseio.com",
+    "project_id": "minhacozinha-dde4e",
+    "storage_bucket": "minhacozinha-dde4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723023258759:android:f7b47dd219805a04",
+        "android_client_info": {
+          "package_name": "wellingtonsilverio.github.io.minhacozinha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723023258759-gmph0k6elg2d8pg27t56rnehoshj9rsa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBKbAFknsRiGODd-S13x09r9bW1U8hkNw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
