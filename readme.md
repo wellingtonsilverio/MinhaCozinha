@@ -14,8 +14,7 @@ para mais detalhes, leia a [Documentação Online](http://wellingtonsilverio.git
 ### Por quê MinhaCozinha? ###
  - **APP para Android** será lançado novas plataformas em breve
  - **Designer baseado em Material Design** 
- - **Não Licenciado ainda** (which allows the usage of cscore
-   for commercial products)
+ - **Não Licenciado ainda**
 
 ### Suporte/Contato ###
 
