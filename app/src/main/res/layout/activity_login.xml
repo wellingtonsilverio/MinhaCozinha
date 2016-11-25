@@ -35,14 +35,14 @@
 
         <Button
             android:layout_margin="15dp"
-            android:id="@+id/buttonRegister"
+            android:id="@+id/buttonLogin"
             android:text="Entrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <TextView
             android:text="Não tem cadastro? clique aqui"
-            android:id="@+id/textViewSignIn"
+            android:id="@+id/textViewSignUp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent" />
 

@@ -30,19 +30,20 @@ public class LoginActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_login);
 
         firebaseAuth = FirebaseAuth.getInstance();
         if(firebaseAuth.getCurrentUser() != null){
+            finish();
             startActivity(new Intent(getBaseContext(), HomeActivity.class));
         }
 
         progressDialog = new ProgressDialog(this);
 
-        buttonSigUp = (Button) findViewById(R.id.buttonRegister);
+        buttonSigUp = (Button) findViewById(R.id.buttonLogin);
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextPass = (EditText) findViewById(R.id.editTextPass);
-        textViewSigIn = (TextView) findViewById(R.id.textViewSignIn);
+        textViewSigIn = (TextView) findViewById(R.id.textViewSignUp);
 
         buttonSigUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,7 +84,11 @@ public class LoginActivity extends AppCompatActivity{
                         progressDialog.dismiss();
 
                         if(task.isSuccessful()){
-
+                            Toast.makeText(LoginActivity.this, "Logado com sucesso", Toast.LENGTH_SHORT);
+                            finish();
+                            startActivity(new Intent(getBaseContext(), HomeActivity.class));
+                        }else{
+                            Toast.makeText(LoginActivity.this, "Login falhou, tente novamente", Toast.LENGTH_SHORT);
                         }
                     }
                 });
